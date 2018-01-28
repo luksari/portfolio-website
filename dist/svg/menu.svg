@@ -1,0 +1,11 @@
+<svg viewBox="0 0 24 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:serif="http://www.serif.com/" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.41">
+    <clipPath id="a">
+        <path serif:id="Menu Icon" d="M22.5 10h-21a1.5 1.5 0 0 1 0-3h21a1.5 1.5 0 1 1 0 3zm0-7h-21a1.5 1.5 0 1 1 0-3h21a1.5 1.5 0 1 1 0 3zm-21 11h21a1.5 1.5 0 1 1 0 2.999h-21A1.5 1.5 0 1 1 1.5 14z"/>
+    </clipPath>
+    <g clip-path="url(#a)">
+        <use xlink:href="#b" width="24" height="17" transform="scale(1 .99997)"/>
+    </g>
+    <defs>
+        <image id="b" width="24" height="17" xlink:href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAARABgDAREAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD5nMcm3KRggZ27uw9eaABMqCw3EqTg56nnPtQBJIoIdWJUYyRk5+n4/nigBjKFbKeXtXn5fUfXp0/lQA5i3mbI2Ktty2RwSM/4mgBAGCrhcLwQoGcnBwKAET/VJ/ntQAD7r/8AXMf+h0ARy/6m5+o/9DNAH//Z"/>
+    </defs>
+</svg>
