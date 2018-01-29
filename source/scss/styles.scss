@@ -1,8 +1,10 @@
 @import "_media.scss";
 @import "_reset.scss";
 @import "_fonts.scss";
-@import "phone/_phone.scss";
 @import "_keyframes.scss";
+@import "_loader.scss";
+@import "phone_portrait/_phone.scss";
+
 
 .page-wrapper {
   width: 100%;
@@ -17,15 +19,4 @@
 
   }
 }
-.page-loader{
 
-    position: fixed;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    background-color: white;
-    z-index: 9999;
-    /* Higher than anything else in the document */
-
-}

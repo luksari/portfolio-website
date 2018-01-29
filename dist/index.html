@@ -14,12 +14,18 @@
 </head>
 
 <body>
-  <!-- ************************ HEADER HOMEPAGE ************************* -->
-  <div class="page-loader">
-
+  <div class="page-loader-wrapper">
+    <div class="page-loader">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+    </div>
   </div>
+  <!-- ************************ HEADER HOMEPAGE ************************* -->
   <div class="page-wrapper">
-    <section  id="home" class="container homepage-container">
+
+    <section id="home" class="container homepage-container">
       <header class="page-header">
         <nav class="page-header__menu">
           <button type="button" class="button menu__menu-button">
@@ -44,7 +50,7 @@
           </ul>
         </nav>
       </header>
-<!-- ************************ CONTENT HOMEPAGE ************************* -->
+      <!-- ************************ CONTENT HOMEPAGE ************************* -->
 
       <section class="homepage-container__content">
         <div class="content__description content__description--primary">
@@ -75,16 +81,25 @@
     <!-- ************************ ABOUT ************************* -->
     <section id="about" class="container aboutpage-container">
       <h2 class="heading aboutpage-container__heading">About</h1>
-      <p class="aboutpage-container__description">Hi i'm Łukasz,<br/> i can be your <span class="description__decoration">designer.</span><br/>I can be your <span class="description__decoration">frontend developer.</span><br/>But mainly,</p>
-      <div class="aboutpage__employee-container">
-        <div class="employee-container__employee">
-          <img src="svg/bad.svg" alt="" class="svg employee employee--bad">
+        <p class="aboutpage-container__description">Hi i'm Łukasz,
+          <br/> i can be your
+          <span class="description__decoration">designer.</span>
+          <br/>I can be your
+          <span class="description__decoration">frontend developer.</span>
+          <br/>But mainly,</p>
+        <div class="aboutpage__employee-container">
+          <div class="employee-container__employee">
+            <img src="svg/bad.svg" alt="" class="svg employee employee--bad">
+          </div>
+          <div class="employee-container__employee">
+            <img src="svg/good.svg" alt="" class="svg employee employee--good">
+          </div>
         </div>
-        <div class="employee-container__employee">
-          <img src="svg/good.svg" alt="" class="svg employee employee--good">
-        </div>
-      </div>
-      <p class="aboutpage-container__description"><strong class="description__important">I can be your <span class="description__decoration">Workmate</span></strong></p>
+        <p class="aboutpage-container__description">
+          <strong class="description__important">I can be your
+            <span class="description__decoration">Workmate</span>
+          </strong>
+        </p>
     </section>
 
     <!-- ************************ SKILLS ************************* -->
@@ -156,13 +171,14 @@
             </div>
             <p class="list-item__description">This is my first Javascript project, It has been done after 3 months of Javascript learning</p>
           </li>
-           <li class="projects-list__list-item">
+          <li class="projects-list__list-item">
             <img src="img/sounds_of_nature.png" alt="Sounds of nature" class="list-item__image">
             <div class="row-wrapper">
               <a href="#" class="row-wrapper__code-link">Code Preview</a>
               <a href="#" class="row-wrapper__live-link">Live Preview</a>
             </div>
-            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
+            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis
+              aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
           </li>
           <li class="projects-list__list-item">
             <img src="img/sounds_of_nature.png" alt="Sounds of nature" class="list-item__image">
@@ -170,7 +186,8 @@
               <a href="#" class="row-wrapper__code-link">Code Preview</a>
               <a href="#" class="row-wrapper__live-link">Live Preview</a>
             </div>
-            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
+            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis
+              aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
           </li>
           <li class="projects-list__list-item">
             <img src="img/sounds_of_nature.png" alt="Sounds of nature" class="list-item__image">
@@ -178,7 +195,8 @@
               <a href="#" class="row-wrapper__code-link">Code Preview</a>
               <a href="#" class="row-wrapper__live-link">Live Preview</a>
             </div>
-            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
+            <p class="list-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil nesciunt numquam ullam atque libero porro, perspiciatis
+              aliquam assumenda, molestias ratione vero alias quaerat, reprehenderit rem expedita aut laudantium quae aliquid!</p>
           </li>
         </ul>
       </div>
@@ -192,27 +210,31 @@
             <a href="#" class="list-item__link">
               <img src="svg/facebook-logo.svg" alt="" class="svg link__img">
             </a>
-            <p class="list-item__description">facebook.com/<br>luksaridsgn</p>
+            <p class="list-item__description">facebook.com/
+              <br>luksaridsgn</p>
           </li>
           <li class="socials-list__list-item">
             <a href="#" class="list-item__link">
               <img src="svg/github-logo.svg" alt="" class="svg link__img">
             </a>
-<p class="list-item__description">github.com/<br>luksari</p>
+            <p class="list-item__description">github.com/
+              <br>luksari</p>
 
           </li>
           <li class="socials-list__list-item">
             <a href="#" class="list-item__link">
               <img src="svg/behance-logo.svg" alt="" class="svg link__img">
             </a>
-<p class="list-item__description">behance.com/<br>luksaridsgn</p>
+            <p class="list-item__description">behance.com/
+              <br>luksaridsgn</p>
 
           </li>
           <li class="socials-list__list-item">
             <a href="#" class="list-item__link">
               <img src="svg/mail-logo.svg" alt="" class="svg link__img">
             </a>
-            <p class="list-item__description">luksaridsgn.contact<br>@gmail.com</p>
+            <p class="list-item__description">luksaridsgn.contact
+              <br>@gmail.com</p>
           </li>
           <li class="socials-list__list-item">
             <a href="#" class="list-item__link">
@@ -228,4 +250,5 @@
     </footer>
   </div>
 </body>
+
 </html>

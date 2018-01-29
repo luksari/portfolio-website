@@ -1,23 +1,23 @@
 (function () {
   "use strict";
 
-  const gulp = require('gulp');
-  const sass = require('gulp-sass');
-  const browserSync = require('browser-sync');
-  const sourcemaps = require('gulp-sourcemaps');
-  const browserify = require('gulp-browserify');
-  const babel = require('gulp-babel');
-  const concat = require('gulp-concat');
-  const uglify = require('gulp-uglify');
-  const wait = require('gulp-wait');
-  const svgmin = require('gulp-svgmin');
-  const autoprefixer = require('gulp-autoprefixer');
-  const imagemin = require('gulp-imagemin');
-  const reload = browserSync.reload;
+  const gulp = require('gulp');                       /*Import gulp */
+  const sass = require('gulp-sass');                  /*Transpile SCSS to CSS */
+  const browserSync = require('browser-sync');        /*Hot reload */
+  const sourcemaps = require('gulp-sourcemaps');      /*Creates source-map for uglified JS file */
+  const browserify = require('gulp-browserify');      /*Gives browser access to e.g require expression */
+  const babel = require('gulp-babel');                /*Transpile ES6 */
+  const concat = require('gulp-concat');              /*Creates one file from few files */
+  const uglify = require('gulp-uglify');              /*Minify JS */
+  const wait = require('gulp-wait');                  /*Helper to improve hot reload */
+  const svgmin = require('gulp-svgmin');              /*Minify SVG */
+  const autoprefixer = require('gulp-autoprefixer');  /*Autoprefix CSS*/
+  const imagemin = require('gulp-imagemin');          /*Minify png, jpg, jpeg */
+  const reload = browserSync.reload;                  /*Hot reload */
 
 
 
-
+/* Transpile ES6  */
   gulp.task('babel', () => {
     gulp.src('./source/scripts/**/*.js')
       .pipe(sourcemaps.init())
@@ -34,11 +34,12 @@
 
       .pipe(gulp.dest('dist/js'));
   });
+  /*Watch for js changes */
   gulp.task('babel-watch', ['babel'], (done) => {
     browserSync.reload();
     done();
   });
-
+/*Minify SVG */
   gulp.task('svg', ()=> {
     gulp.src('source/svg/**/*.svg')
       .pipe(svgmin({
@@ -63,10 +64,12 @@
       .on('error', onError)
       .pipe(gulp.dest('dist/svg'));
   });
+/*Watch for svg changes */
   gulp.task('svg-watch', ['svg'], function(done) {
     browserSync.reload();
     done();
   });
+  /*Minify png, jpg, jpeg, gif etc. */
   gulp.task('img', ()=> {
     gulp.src('source/img/**/*.*')
       .pipe(imagemin([
@@ -76,11 +79,12 @@
       .on('error', onError)
       .pipe(gulp.dest('dist/img'));
   });
+/*Watch for images changes */
   gulp.task('img-watch', ['img'], function(done) {
     browserSync.reload();
     done();
   });
-
+/*Transpile scss to css*/
   gulp.task('sass', function () {
     gulp.src('source/scss/**/*.scss')
       .pipe(sass({ includePaths: ['scss'] }))
@@ -92,13 +96,13 @@
       .on('error', onError)
       .pipe(gulp.dest('dist/css'));
   });
-
+/*Watch for scss changes */
   gulp.task('sass-watch', ['sass'], function (done) {
     browserSync.reload();
     done();
   });
 
-
+/*Runs all tasks */
   gulp.task('default', ['sass', 'babel', 'svg', 'img'], function () {
     browserSync.init(["css/*.css", "js/*.js", "svg/*.svg", "img/*.*"], {
       server: {
@@ -112,7 +116,7 @@
     gulp.watch("source/img/**/*.*", ['img-watch']);
   });
 
-
+/*Error handling */
   function onError(err) {
     console.log(err);
     this.emit('end');

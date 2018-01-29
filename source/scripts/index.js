@@ -6,11 +6,12 @@ import smoothScroll from 'smoothscroll';
 window.onload = () => {
 
 svgInject();
-burgerify();
+document.querySelectorAll(".page-loader-wrapper")[0].style.display = "none";
+delegateMenu();
 
 };
 
-function burgerify() {
+function delegateMenu() {
   const menu = document.querySelectorAll(".page-header__menu");
   if (menu) {
     menu[0].addEventListener('click', (e) => {
@@ -42,7 +43,6 @@ function svgInject() {
     console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
   });
 
-  document.querySelectorAll(".page-loader")[0].style.display = "none";
 }
 
 function toggleMenu(){

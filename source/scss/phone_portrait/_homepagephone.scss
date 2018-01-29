@@ -13,7 +13,7 @@
       flex-direction: column;
       justify-content: flex-start;
       position: fixed;
-      z-index: 100;
+      z-index: 1000;
       width: 100%;
     }
     /***************MENU SECTION**************/
@@ -67,7 +67,7 @@
           align-items: center;
           text-align: center;
           width: 100%;
-          z-index: 9999;
+          z-index: 1000;
 
           max-height: 999999px;
           transform-origin: 50% 0%;
