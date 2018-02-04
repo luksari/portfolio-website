@@ -1,0 +1,22 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-tablet-portrait-up {
+   .page-footer {
+     width: 100%;
+     height: auto;
+     background: $dark;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     .page-footer__footer-description {
+       color: $white;
+       padding: 1rem;
+       font-family: 'open-sans', sans-serif;
+       font-size: calc(#{$font-size}*0.5);
+       text-align: center;
+     }
+   }
+
+}
+

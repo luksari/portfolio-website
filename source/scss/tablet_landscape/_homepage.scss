@@ -1,0 +1,34 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-tablet-landscape-up {
+  .homepage-container {
+    align-items: stretch;
+    .homepage-container__content {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      .content__description {
+        padding: 0.6rem 1.5rem;
+        width: 45%;
+        text-align: center;
+        border-radius: 2rem;
+        &.content__description--primary {
+          background: $white;
+          border: 1px solid $dark;
+          order: 1;
+          margin-bottom: 0;
+        }
+        &.content__description--secondary {
+          order: 2;
+        }
+      }
+      .content__logo {
+        margin-top: 8rem;
+        width: 80%;
+      }
+    }
+  }
+}

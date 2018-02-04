@@ -31,7 +31,6 @@
       .pipe(concat('index.js'))
       .on('error', onError)
       .pipe(sourcemaps.write('.'))
-
       .pipe(gulp.dest('dist/js'));
   });
   /*Watch for js changes */

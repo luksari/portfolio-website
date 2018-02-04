@@ -1,0 +1,52 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-tablet-portrait-up {
+ .page-header {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   width: 100%;
+ }
+
+ .page-header__menu {
+   background: $dark;
+   display: flex;
+  padding: 0.8rem;
+   width: 100%;
+   justify-content: center;
+   .menu__menu-button {
+    display: none;
+   }
+   .menu__menu-list {
+    display: flex;
+    width: 80%;
+
+     }
+     .menu-list__item {
+       text-align: center;
+       width: 100%;
+       &:hover {
+         a {
+           font-size: 2.3rem;
+           font-weight: bolder;
+           color: $green;
+           border-bottom: 2px solid $green;
+
+         }
+       }
+       a {
+         text-decoration: none;
+         font-size: 2.2rem;
+         color: $white;
+         text-transform: uppercase;
+         transition: font-size 0.3s;
+         border-bottom: 1px solid $white;
+       }
+     }
+   }
+ }
+
+
+
+

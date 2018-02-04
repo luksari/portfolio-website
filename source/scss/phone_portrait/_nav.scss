@@ -1,0 +1,100 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-phone-only {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  /***************MENU SECTION**************/
+
+  .page-header__menu {
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    .menu__logo {
+      display: flex;
+      width: 100%;
+      border-bottom: 1px solid $dark;
+      .logo__image {
+        width: 100%;
+        height: 3rem;
+        margin: 0 auto;
+      }
+    }
+    .menu__menu-button {
+      width: 100%;
+      background: $white;
+      padding: 1rem;
+      display: block;
+      cursor: pointer;
+      border-bottom: 1px solid $dark;
+      &:hover {
+        background: $gray;
+      }
+      .menu__menu-icon {
+        width: 3rem;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+    .menu__menu-list {
+      display: none;
+      transform-origin: 50% 0%;
+      transform: scaleY(0);
+      animation: hideAnimation .5s ease-in-out;
+      transition: max-height 1s ease-in-out;
+      &.opened {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        z-index: 1000;
+        max-height: 999999px;
+        transform-origin: 50% 0%;
+        transform: scaleY(1);
+        animation: showAnimation .5s ease-in-out;
+        transition: max-height 1s ease-in-out;
+      }
+      .menu-list__item {
+        position: relative;
+        border-bottom: 1px solid $dark;
+        width: 100%;
+        padding: 0.8rem 0;
+        &:last-child {
+          border-bottom: none;
+        }
+        &:hover {
+          background: $dark;
+          a {
+            font-size: 2rem;
+            font-weight: bolder;
+            color: $green;
+          }
+        }
+        a {
+          text-decoration: none;
+          display: block;
+          padding: 0.4rem;
+          font-size: 1.8rem;
+          color: $dark;
+          text-transform: uppercase;
+          transition: font-size 0.3s;
+        }
+      }
+    }
+  }
+
+
+}
+

@@ -1,14 +1,17 @@
 @keyframes scroll {
   0% {
     bottom: 1rem;
+
   }
   50% {
-    bottom: 2.5rem;
+    bottom:2.5rem;
+
   }
   100% {
     bottom: 1rem;
   }
 }
+
 @keyframes showAnimation {
   0% {
     transform: scaleY(0.1);
@@ -18,44 +21,36 @@
   }
   60% {
     transform: scaleY(0.98);
-
   }
   80% {
     transform: scaleY(1.04);
-
   }
   100% {
     transform: scaleY(0.98);
-
   }
   80% {
     transform: scaleY(1.02);
-
   }
   100% {
     transform: scaleY(1);
-
   }
 }
 
 @keyframes hideAnimation {
   0% {
     transform: scaleY(0.1);
-
   }
   60% {
     transform: scaleY(0.98);
-
   }
   80% {
     transform: scaleY(1.02);
-
   }
   100% {
     transform: scaleY(0);
-
   }
 }
+
 @keyframes sk-foldCubeAngle {
   0%,
   10% {
@@ -76,5 +71,3 @@
     opacity: 0;
   }
 }
-
-
