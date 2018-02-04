@@ -5,10 +5,21 @@ import smoothScroll from 'smoothscroll';
 window.onload = () => {
 
 svgInject();
-document.querySelectorAll(".page-loader-wrapper")[0].style.display = "none";
 delegateMenu();
-
+enableSmoothScroll();
 };
+
+function enableSmoothScroll() {
+  window.addEventListener('click', e => {
+    if (e.target && e.target.nodeName === "A") {
+      let id = e
+        .target
+        .getAttribute('href');
+      let element = document.querySelector(id);
+      smoothScroll(element, 1000);
+    }
+  });
+}
 
 function delegateMenu() {
   const menu = document.querySelectorAll(".page-header__menu");
@@ -20,12 +31,7 @@ function delegateMenu() {
         toggleMenu();
       }
       if (e.target && (e.target.nodeName === "A" || e.target.parentElement.nodeName === "LI")) {
-
-      const id = e.target.getAttribute('href');
-      const element = document.querySelector(id)
-
       toggleMenu();
-      smoothScroll(element, 1000);
       }
     }, false);
   }
@@ -34,6 +40,7 @@ function delegateMenu() {
 function svgInject() {
   const mySVGsToInject = document.querySelectorAll('img.svg');
   SVGInjector(mySVGsToInject);
+  document.querySelectorAll(".page-loader-wrapper")[0].style.display = "none";
 }
 
 function toggleMenu(){

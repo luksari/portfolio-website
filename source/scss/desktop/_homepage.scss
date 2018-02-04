@@ -1,0 +1,33 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-desktop-up {
+  .homepage-container {
+    .homepage-container__content {
+      margin-top: 8rem;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: 100%;
+      .content__description {
+        padding: 0.6rem 1.5rem;
+        width: 40%;
+        text-align: center;
+        border-radius: 2rem;
+        &.content__description--primary {
+          background: $white;
+          border: 1px solid $dark;
+          order: 1;
+          margin-bottom: 0;
+        }
+        &.content__description--secondary {
+          order: 2;
+        }
+      }
+      .content__logo {
+        margin: 0;
+        order: 0;
+        width: 80%;
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-desktop-up {
+  .aboutpage-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .aboutpage-container__heading {
+      font-size: calc(#{$font-size}*0.6);
+    }
+    .aboutpage-container__description {
+      width: 100%;
+      margin-bottom: 2rem;
+      align-self: center;
+      font-size: calc(#{$font-size}*0.4);
+      .description__decoration {
+        font-size:calc(#{$font-size}*0.5);
+      }
+      .description__important {
+        color: $white;
+        font-size: calc(#{$font-size}*0.5);
+        .description__decoration {
+          color: $white;
+          font-size: calc(#{$font-size}*0.6);
+        }
+      }
+    }
+    .aboutpage__employee-container {
+      width: 50%;
+      display: flex;
+      padding: 1.5rem;
+      justify-content: space-between;
+      position: relative;
+      &::after{
+        content: '';
+        width: 80%;
+        padding: 2rem;
+        align-self: center;
+        border-bottom: none;
+      }
+      .employee-container__employee {
+        width: 50%;
+        .employee {
+          width: 50%;
+          max-height: 630px;
+          position: absolute;
+        }
+        .employee--bad{
+          left: -25rem;
+          bottom: -20rem;
+        }
+        .employee--good {
+          right: -25rem;
+          bottom: -20rem;
+        }
+
+      }
+    }
+  }
+}
