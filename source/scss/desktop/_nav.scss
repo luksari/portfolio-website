@@ -11,7 +11,7 @@
   .page-header__menu {
     background: $dark;
     display: flex;
-    padding: 3rem;
+    padding: 0;
     width: 100%;
     justify-content: flex-end;
     .menu__menu-button {
@@ -19,6 +19,7 @@
     }
     .menu__menu-list {
       display: flex;
+      flex: 1 1 auto;
       width: 100%;
       li:first-of-type {
         &.logo {
@@ -38,24 +39,24 @@
     }
     .menu-list__item {
       text-align: center;
-      width: 100%;
+      width: 10%;
+      padding: 1rem;
       &:hover {
         a {
-          font-size: calc(#{$font-size}*0.32);
           font-weight: bolder;
           background: $white;
           color: $dark;
-          padding: 1rem;
+          padding: 0.5rem;
           border-bottom: none;
           border-radius: 15%;
         }
       }
       a {
         text-decoration: none;
-        font-size: calc(#{$font-size}*0.3);
+        font-size: calc(#{$font-size}*0.25);
         color: $white;
         text-transform: uppercase;
-        transition: font-size 0.3s;
+        transition: all 0.3s;
         border-bottom: 1px solid $white;
       }
     }

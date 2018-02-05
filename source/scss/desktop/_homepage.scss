@@ -3,36 +3,41 @@
 @import './variables.scss';
 @include for-desktop-up {
   .homepage-container {
-    flex-direction: row;
+    flex-direction: column;
     height: 100%;
-    .content__description {
-      padding: 0.6rem 1.5rem;
-      text-align: center;
-      border-radius: 2rem;
-      align-self: center;
-      width: 25%;
-      flex: 0 45%;
-      .description__title{
-        font-size: calc(#{$font-size}*0.5);
-        .title__decoration{
-          font-size: calc(#{$font-size}*0.55);
-
+    .description-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      .content__description {
+        padding: 0.3rem 1rem;
+        text-align: center;
+        border-radius: 2rem;
+        align-self: center;
+        width: 25%;
+        .description__title {
+          font-size: calc(#{$font-size}*0.3);
+          .title__decoration {
+            font-size: calc(#{$font-size}*0.4);
+          }
         }
-      }
-      &.content__description--primary {
-        background: $white;
-        border: 1px solid $dark;
-        order: 1;
-        margin-bottom: 0;
-      }
-      &.content__description--secondary {
-        order: 2;
+        &.content__description--primary {
+          background: $white;
+          border: 1px solid $dark;
+          order: 1;
+          margin-bottom: 0;
+        }
+        &.content__description--secondary {
+          order: 2;
+        }
       }
     }
     .content__logo {
-      margin: 0;
+      margin-top: auto;
+      margin-bottom: 2rem;
       order: 0;
-      width: 60%;
+      width: 40%;
     }
   }
 }
