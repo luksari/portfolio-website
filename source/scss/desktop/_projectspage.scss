@@ -1,13 +1,14 @@
 @import "./_media.scss";
 @import './mixins.scss';
 @import './variables.scss';
-@include for-tablet-landscape-up {
+@include for-desktop-up {
   .projectspage-container {
     .projectspage-container__heading {
       font-size: calc(#{$font-size}*0.6);
     }
     .projectspage-container__projects-container {
       .projects-container__projects-list {
+        width: 80%;
         .projects-list__list-item {
           width: 16.667%;
           .list-item__image {
@@ -15,12 +16,12 @@
           }
           .list-item__description {
             width: 80%;
-            font-size: calc(#{$font-size}*0.25);
+            font-size: calc(#{$font-size}*0.2);
           }
           .row-wrapper {
             .row-wrapper__code-link,
             .row-wrapper__live-link {
-              font-size: calc(#{$font-size}*0.3);
+              font-size: calc(#{$font-size}*0.25);
             }
           }
         }

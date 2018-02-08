@@ -6,33 +6,35 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     .aboutpage-container__heading {
       font-size: calc(#{$font-size}*0.6);
     }
     .aboutpage-container__description {
-      width: 100%;
-      margin-bottom: 2rem;
-      align-self: center;
-      font-size: calc(#{$font-size}*0.4);
+      width: 33%;
+      margin-bottom: 0;
+      align-self: flex-start;
+      font-size: calc(#{$font-size}*0.3);
       .description__decoration {
-        font-size:calc(#{$font-size}*0.5);
+        font-size:calc(#{$font-size}*0.4);
       }
       .description__important {
         color: $white;
-        font-size: calc(#{$font-size}*0.5);
+        font-size: calc(#{$font-size}*0.4);
         .description__decoration {
           color: $white;
-          font-size: calc(#{$font-size}*0.6);
+          font-size: calc(#{$font-size}*0.5);
         }
       }
     }
     .aboutpage__employee-container {
-      width: 50%;
+      width: 100%;
       display: flex;
       padding: 1.5rem;
       justify-content: space-between;
       position: relative;
       &::after{
+        display: none;
         content: '';
         width: 80%;
         padding: 2rem;
@@ -42,16 +44,18 @@
       .employee-container__employee {
         width: 50%;
         .employee {
-          width: 50%;
-          max-height: 630px;
+          width: 35%;
+          max-height: 450px;
           position: absolute;
         }
         .employee--bad{
-          left: -25rem;
+          margin-left: 3rem;
+          left: auto;
           bottom: -20rem;
         }
         .employee--good {
-          right: -25rem;
+          margin-right: 3rem;
+          right: auto;
           bottom: -20rem;
         }
 

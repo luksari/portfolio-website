@@ -11,10 +11,11 @@
         font-size: calc(#{$font-size}*0.4);
       }
       .skills-container__skills-list {
+        width: 80%;
         .skills-list__list-item {
           width: 16.667%;
           .list-item__image {
-            max-width: 35%;
+            max-width: 50%;
           }
           .list-item__description {
             font-size: calc(#{$font-size}*0.2);

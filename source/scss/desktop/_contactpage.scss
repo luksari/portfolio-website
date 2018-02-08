@@ -1,13 +1,14 @@
 @import "./_media.scss";
 @import './mixins.scss';
 @import './variables.scss';
-@include for-tablet-landscape-up {
+@include for-desktop-up {
   .contactpage-container {
     .contactpage-container__heading {
       font-size: calc(#{$font-size}*0.6);
     }
     .contactpage-container__socials-container {
       .socials-container__socials-list {
+        width: 80%;
         .socials-list__list-item {
           width: 20%;
           .list-item__description {
@@ -15,7 +16,7 @@
           }
           .list-item__link {
             .link__img {
-              height: 7.5rem;
+              height: 6rem;
             }
           }
         }
