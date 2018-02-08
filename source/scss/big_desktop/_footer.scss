@@ -1,0 +1,11 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-big-desktop-up {
+  .page-footer {
+    .page-footer__footer-description {
+      font-size: calc(#{$font-size}*0.25);
+    }
+  }
+}
+

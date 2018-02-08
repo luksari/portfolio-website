@@ -1,0 +1,32 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-big-desktop-up {
+  .contactpage-container {
+    .contactpage-container__heading {
+      font-size: calc(#{$font-size}*0.6);
+    }
+    .contactpage-container__socials-container {
+      .socials-container__socials-list {
+        width: 60%;
+        .socials-list__list-item {
+          width: 20%;
+          .list-item__description {
+            font-size: calc(#{$font-size}*0.18);
+          }
+          .list-item__link {
+            .link__img {
+              height: 6rem;
+            }
+          }
+        }
+        li:last-of-type {
+          .list-item__btn {
+            width: 15%;
+            font-size: calc(#{$font-size}*0.2);
+          }
+        }
+      }
+    }
+  }
+}

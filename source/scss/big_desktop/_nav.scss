@@ -1,0 +1,31 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-big-desktop-up {
+  .page-header {
+    .page-header__menu {
+      .menu__menu-button {
+        display: none;
+      }
+      .menu__menu-list {
+        li:first-of-type {
+          &.logo {
+            &:hover {
+              a {}
+            }
+            a {
+              .logo-svg {
+                width: 20%;
+              }
+            }
+          }
+        }
+      }
+      .menu-list__item {
+        a {
+          font-size: calc(#{$font-size}*0.15);
+        }
+      }
+    }
+  }
+}

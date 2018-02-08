@@ -1,0 +1,31 @@
+@import "./_media.scss";
+@import './mixins.scss';
+@import './variables.scss';
+@include for-big-desktop-up {
+  .projectspage-container {
+    .projectspage-container__heading {
+      font-size: calc(#{$font-size}*0.6);
+    }
+    .projectspage-container__projects-container {
+      .projects-container__projects-list {
+        width: 60%;
+        .projects-list__list-item {
+          width: 16.667%;
+          .list-item__image {
+            max-width: 100%;
+          }
+          .list-item__description {
+            width: 80%;
+            font-size: calc(#{$font-size}*0.15);
+          }
+          .row-wrapper {
+            .row-wrapper__code-link,
+            .row-wrapper__live-link {
+              font-size: calc(#{$font-size}*0.2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
