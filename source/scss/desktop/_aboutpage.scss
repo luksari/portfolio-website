@@ -56,14 +56,6 @@
       padding: 1.5rem;
       justify-content: space-between;
       position: relative;
-      &::after{
-        display: none;
-        content: '';
-        width: 80%;
-        padding: 2rem;
-        align-self: center;
-        border-bottom: none;
-      }
       .employee-container__employee {
         width: 50%;
         .employee {
@@ -73,12 +65,12 @@
         }
         .employee--bad{
           margin-left: 3rem;
-          left: auto;
+          right: auto;
           bottom: -20rem;
         }
         .employee--good {
           margin-right: 3rem;
-          right: auto;
+          left: auto;
           bottom: -20rem;
         }
 

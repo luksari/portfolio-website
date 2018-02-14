@@ -57,15 +57,27 @@
       }
     }
     .aboutpage__employee-container {
-      display: flex;
       width: 100%;
+      display: flex;
+      padding: 1.5rem;
       justify-content: center;
-      margin-bottom: 2rem;
+      position: relative;
       .employee-container__employee {
-        display: flex;
-        justify-content: center;
+        width: 50%;
         .employee {
-          max-width: 70%;
+          width: 35%;
+          max-height: 230px;
+          position: absolute;
+        }
+        .employee--bad {
+          margin-left: 1rem;
+          left: 2rem;
+          bottom: -5rem;
+        }
+        .employee--good {
+          margin-right: 1rem;
+          right: 2rem;
+          bottom: -5rem;
         }
       }
     }

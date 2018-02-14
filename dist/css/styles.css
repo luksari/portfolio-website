@@ -690,13 +690,7 @@ body {
         .projectspage-container .projectspage-container__projects-container .projects-container__projects-list .projects-list__list-item {
           position: relative;
           margin-top: 0.8rem;
-          width: 70%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
+          width: 70%; }
           .projectspage-container .projectspage-container__projects-container .projects-container__projects-list .projects-list__list-item:hover > .list-item__overlay {
             position: absolute;
             display: -webkit-box;
@@ -838,7 +832,7 @@ body {
           .contactpage-container .contactpage-container__socials-container .socials-container__socials-list .socials-list__list-item .list-item__link {
             margin-bottom: 1rem; }
             .contactpage-container .contactpage-container__socials-container .socials-container__socials-list .socials-list__list-item .list-item__link .link__img {
-              height: 8.5rem;
+              height: 6rem;
               display: block; }
               .contactpage-container .contactpage-container__socials-container .socials-container__socials-list .socials-list__list-item .list-item__link .link__img:hover path {
                 fill: #40B1E0; }
@@ -849,7 +843,7 @@ body {
               transition: 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) all; }
           .contactpage-container .contactpage-container__socials-container .socials-container__socials-list .socials-list__list-item .list-item__description {
             font-size: calc(calc(100vw*0.05625)*0.8);
-            max-width: 80%;
+            max-width: 100%;
             text-align: center;
             display: block; }
           .contactpage-container .contactpage-container__socials-container .socials-container__socials-list .socials-list__list-item .list-item__btn {
@@ -1193,23 +1187,29 @@ body {
           color: #2F2F2F;
           font-size: calc(calc(100vw*0.05625)*1.1); }
     .aboutpage-container .aboutpage__employee-container {
+      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      width: 100%;
+      padding: 1.5rem;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-bottom: 2rem; }
+      position: relative; }
       .aboutpage-container .aboutpage__employee-container .employee-container__employee {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center; }
+        width: 50%; }
         .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee {
-          max-width: 70%; } }
+          width: 35%;
+          max-height: 230px;
+          position: absolute; }
+        .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--bad {
+          margin-left: 1rem;
+          left: 2rem;
+          bottom: -5rem; }
+        .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--good {
+          margin-right: 1rem;
+          right: 2rem;
+          bottom: -5rem; } }
 
 @media (min-width: 600px) {
   .skillspage-container {
@@ -1368,13 +1368,7 @@ body {
         .projectspage-container .projectspage-container__projects-container .projects-container__projects-list .projects-list__list-item {
           position: relative;
           margin: 0.8rem;
-          width: 45%;
-          display: -webkit-box;
-          display: -ms-flexbox;
-          display: flex;
-          -webkit-box-pack: center;
-          -ms-flex-pack: center;
-          justify-content: center; }
+          width: 45%; }
           .projectspage-container .projectspage-container__projects-container .projects-container__projects-list .projects-list__list-item:hover > .list-item__overlay {
             position: absolute;
             display: -webkit-box;
@@ -1702,17 +1696,19 @@ body {
         .aboutpage-container .aboutpage-container__description .description__important .description__decoration {
           color: #2F2F2F;
           font-size: calc(calc(100vw*0.05625)*0.6); }
-    .aboutpage-container .aboutpage__employee-container {
-      width: 100%;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-      align-items: stretch; }
-      .aboutpage-container .aboutpage__employee-container .employee-container__employee {
-        width: 50%; }
-        .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee {
-          max-width: 50%; } }
+    .aboutpage-container .aboutpage__employee-container .employee-container__employee {
+      width: 50%; }
+      .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee {
+        width: 35%;
+        max-height: 360px; }
+      .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--bad {
+        margin-left: 1rem;
+        left: 2rem;
+        bottom: -5rem; }
+      .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--good {
+        margin-right: 1rem;
+        right: 2rem;
+        bottom: -5rem; } }
 
 @media (min-width: 900px) {
   .skillspage-container .skillspage-container__heading {
@@ -1879,14 +1875,6 @@ body {
       -ms-flex-pack: justify;
       justify-content: space-between;
       position: relative; }
-      .aboutpage-container .aboutpage__employee-container::after {
-        display: none;
-        content: '';
-        width: 80%;
-        padding: 2rem;
-        -ms-flex-item-align: center;
-        align-self: center;
-        border-bottom: none; }
       .aboutpage-container .aboutpage__employee-container .employee-container__employee {
         width: 50%; }
         .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee {
@@ -1895,11 +1883,11 @@ body {
           position: absolute; }
         .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--bad {
           margin-left: 3rem;
-          left: auto;
+          right: auto;
           bottom: -20rem; }
         .aboutpage-container .aboutpage__employee-container .employee-container__employee .employee--good {
           margin-right: 3rem;
-          right: auto;
+          left: auto;
           bottom: -20rem; } }
 
 @media (min-width: 1200px) {

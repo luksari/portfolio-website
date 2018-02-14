@@ -55,7 +55,7 @@
           .list-item__link{
             margin-bottom: 1rem;
             .link__img{
-              height: 8.5rem;
+              height: 6rem;
               display: block;
               &:hover {
                 & path {
@@ -75,8 +75,7 @@
           }
           .list-item__description{
             font-size: calc(#{$font-size}*0.8);
-
-            max-width: 80%;
+            max-width: 100%;
             text-align: center;
             display: block;
           }

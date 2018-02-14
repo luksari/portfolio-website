@@ -27,13 +27,21 @@
       }
     }
     .aboutpage__employee-container {
-      width: 100%;
-      flex-wrap: wrap;
-      align-items: stretch;
       .employee-container__employee {
         width: 50%;
         .employee {
-          max-width: 50%;
+          width: 35%;
+          max-height: 360px;
+        }
+        .employee--bad {
+          margin-left: 1rem;
+          left: 2rem;
+          bottom: -5rem;
+        }
+        .employee--good {
+          margin-right: 1rem;
+          right: 2rem;
+          bottom: -5rem;
         }
       }
     }
