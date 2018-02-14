@@ -25,6 +25,12 @@
         a {
           font-size: calc(#{$font-size}*0.15);
         }
+        &:hover {
+          a{
+            font-size: calc(#{$font-size}*0.2);
+            padding: 0.2rem;
+          }
+        }
       }
     }
   }

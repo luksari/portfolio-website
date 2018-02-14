@@ -12,13 +12,36 @@
         font-size:calc(#{$font-size}*0.28);
       }
       .description__important {
-        color: $white;
+        color: $dark;
         font-size: calc(#{$font-size}*0.3);
         .description__decoration {
-          color: $white;
+          color: $dark;
           font-size: calc(#{$font-size}*0.35);
         }
       }
     }
+     .aboutpage__employee-container {
+       width: 100%;
+       display: flex;
+       padding: 1.5rem;
+       justify-content: space-between;
+       position: relative;
+       &::after {
+         display: none;
+         content: '';
+         width: 80%;
+         padding: 2rem;
+         align-self: center;
+         border-bottom: none;
+       }
+       .employee-container__employee {
+         .employee {
+           width: 45%;
+           max-height: 620px;
+         }
+       }
+     }
+    }
   }
-}
+
+

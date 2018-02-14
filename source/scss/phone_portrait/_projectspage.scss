@@ -6,18 +6,18 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: $dark;
+    background: $gray;
     padding: 1.5rem;
     .projectspage-container__heading {
       display: block;
       font-size: calc(#{$font-size}*2);
       width: 100%;
-      color: $white;
+      color: $dark;
       text-align: center;
       z-index: 5;
       &:before,
       &:after {
-        background-color: $white;
+        background-color: $dark;
         content: "";
         display: inline-block;
         height: 2px;
@@ -39,46 +39,68 @@
       width: 100%;
       flex-direction: column;
       align-items: center;
-      .projects-container__projects-list{
+      .projects-container__projects-list {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-        .projects-list__list-item{
-          width: 50%;
-          padding: 0.5rem;
+        .projects-list__list-item {
+          position: relative;
+          margin-top: 0.8rem;
+          width: 70%;
           display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          .list-item__image{
+          justify-content: center;
+          &:hover {
+            &>.list-item__overlay {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: rgba($color:$white, $alpha: 0.7);
+              padding: 0.8rem;
+              border-radius: 10%;
+              box-shadow: 0 0 5px 0 $dark;
+              opacity: 1;
+            }
+          }
+          .list-item__image {
             max-width: 100%;
-            margin-bottom: 1rem;
           }
-          .list-item__description {
-            text-align: center;
-            color: $white;
-            font-family: 'open-sans', sans-serif;
-            font-size: calc(#{$font-size}*0.7);
-          }
-          .row-wrapper{
-            display: flex;
-            width: 100%;
-            margin-bottom: 1rem;
-            justify-content: space-between;
-            .row-wrapper__code-link, .row-wrapper__live-link{
-              font-size: calc(#{$font-size}*0.8);
-              color: $blue;
-              font-weight: bold;
+          .list-item__overlay {
+            display: none;
+            animation: showProject 0.2s ease-in-out;
+            transition: 1s all ease;
+            .list-item__technologies {
               text-align: center;
-              font-family: 'open-sans',
-              sans-serif;
-              max-width: 100%;
-              transition: 0.1s ease-in-out all;
-              &:hover, &:focus{
-                color: $gray;
+              color: $dark;
+              font-family: 'open-sans', sans-serif;
+              font-size: calc(#{$font-size}*0.9);
+            }
+            .row-wrapper {
+              display: flex;
+              width: 100%;
+              justify-content: space-around;
+              margin-bottom: 0.5rem;
+              .row-wrapper__code-link,
+              .row-wrapper__live-link {
+                font-size: calc(#{$font-size}*1);
+                color: $orange;
+                font-weight: bold;
+                text-align: center;
                 font-family: 'open-sans', sans-serif;
-                border-bottom: 2px solid $white;
+                max-width: 100%;
+                transition: 0.1s ease-in-out all;
+                &:hover,
+                &:focus {
+                  color: $blue;
+                  font-family: 'open-sans', sans-serif;
+                  border-bottom: 2px solid $blue;
+                }
               }
             }
           }

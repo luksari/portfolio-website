@@ -6,17 +6,17 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: $dark;
+    background: $gray;
     .aboutpage-container__heading {
       display: block;
       font-size: calc(#{$font-size}*1.5);
       width: 100%;
-      color: $white;
+      color: $dark;
       text-align: center;
       z-index: 5;
       &:before,
       &:after {
-        background-color: $white;
+        background-color: $dark;
         content: "";
         display: inline-block;
         height: 2px;
@@ -38,20 +38,20 @@
       text-align: center;
       font-size: calc(#{$font-size}*0.7);
       z-index: 1;
-      color: $white;
+      color: $dark;
       font-family: 'open-sans', sans-serif;
       margin-bottom: 1rem;
       .description__decoration {
         font-size: calc(#{$font-size}*0.9);
-        color: $white;
+        color: $dark;
         border-bottom: 3px solid $green;
         width: 100%;
       }
       .description__important {
-        color: $white;
+        color: $dark;
         font-size: calc(#{$font-size}*0.9);
         .description__decoration {
-          color: $white;
+          color: $dark;
           font-size: calc(#{$font-size}*1.1);
         }
       }

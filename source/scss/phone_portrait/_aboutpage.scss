@@ -6,17 +6,17 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    background: $dark;
+    background: $gray;
     .aboutpage-container__heading {
       display: block;
       font-size: calc(#{$font-size}*2);
       width: 100%;
-      color: $white;
+      color: $dark;
       text-align: center;
       z-index: 5;
       &:before,
       &:after {
-        background-color: $white;
+        background-color: $dark;
         content: "";
         display: inline-block;
         height: 2px;
@@ -40,16 +40,13 @@
       flex: 1 1 auto;
       margin: 2rem 1rem;
       z-index: 1;
-      color: $white;
+      color: $dark;
       font-family: 'open-sans', sans-serif;
       .description__decoration {
         font-size: calc(#{$font-size}*1.2);
-        // font-weight: bold;
-        color: $white;
+        color: $dark;
         border-bottom: 3px solid $green;
         width: 100%;
-
-
       }
       strong {
         font-size: 3rem;

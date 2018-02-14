@@ -68,3 +68,7 @@
     opacity: 0;
   }
 }
+@keyframes showProject{
+  from {height: 15%;}
+  to{height: 100%;}
+}

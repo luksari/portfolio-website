@@ -10,18 +10,20 @@
       .projects-container__projects-list {
         width: 60%;
         .projects-list__list-item {
-          width: 16.667%;
+          width: 25%;
           .list-item__image {
             max-width: 100%;
           }
-          .list-item__description {
-            width: 80%;
-            font-size: calc(#{$font-size}*0.15);
-          }
-          .row-wrapper {
-            .row-wrapper__code-link,
-            .row-wrapper__live-link {
-              font-size: calc(#{$font-size}*0.2);
+          .list-item__overlay {
+            .list-item__technologies {
+              width: 80%;
+              font-size: calc(#{$font-size}*0.15);
+            }
+            .row-wrapper {
+              .row-wrapper__code-link,
+              .row-wrapper__live-link {
+                font-size: calc(#{$font-size}*0.2);
+              }
             }
           }
         }

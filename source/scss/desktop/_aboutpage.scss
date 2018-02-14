@@ -7,6 +7,29 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+    position: relative;
+     &:before {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 100%;
+       background: url('../img/bg.jpg') no-repeat center;
+       opacity: 0.15;
+
+     }
+     &:after {
+       content: '';
+       position: absolute;
+       top: 0;
+       right: 0;
+       overflow: hidden;
+       width: 0;
+       height: 0;
+       border-style: solid;
+       z-index: 0;
+       border-width: 50vh 50vh 50vh 0;
+       border-color: transparent $dark transparent transparent;
+     }
     .aboutpage-container__heading {
       font-size: calc(#{$font-size}*0.6);
     }
@@ -19,10 +42,10 @@
         font-size:calc(#{$font-size}*0.4);
       }
       .description__important {
-        color: $white;
+        color: $dark;
         font-size: calc(#{$font-size}*0.4);
         .description__decoration {
-          color: $white;
+          color: $dark;
           font-size: calc(#{$font-size}*0.5);
         }
       }

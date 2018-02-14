@@ -15,14 +15,14 @@
       margin-bottom: 2rem;
       font-size: calc(#{$font-size}*0.4);
       .description__decoration {
-        font-size:calc(#{$font-size}*0.6);
+        font-size:calc(#{$font-size}*0.55);
       }
       .description__important {
-        color: $white;
-        font-size: calc(#{$font-size}*0.5);
+        color: $dark;
+        font-size: calc(#{$font-size}*0.45);
         .description__decoration {
-          color: $white;
-          font-size: calc(#{$font-size}*0.7);
+          color: $dark;
+          font-size: calc(#{$font-size}*0.6);
         }
       }
     }
@@ -30,13 +30,6 @@
       width: 100%;
       flex-wrap: wrap;
       align-items: stretch;
-      &::after{
-        content: '';
-        width: 80%;
-        padding: 2rem;
-        align-self: center;
-        border-bottom: 2px solid $white;
-      }
       .employee-container__employee {
         width: 50%;
         .employee {
