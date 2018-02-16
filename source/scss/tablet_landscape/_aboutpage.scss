@@ -13,9 +13,10 @@
     .aboutpage-container__description {
       width: 50%;
       margin-bottom: 2rem;
+      line-height: calc(#{$font-size}*0.65);
       font-size: calc(#{$font-size}*0.4);
       .description__decoration {
-        font-size:calc(#{$font-size}*0.55);
+        font-size:calc(#{$font-size}*0.45);
       }
       .description__important {
         color: $dark;

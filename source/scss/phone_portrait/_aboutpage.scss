@@ -8,6 +8,7 @@
     flex-direction: column;
     background: $gray;
     .aboutpage-container__heading {
+      margin-top: 4rem;
       display: block;
       font-size: calc(#{$font-size}*2);
       width: 100%;
@@ -49,12 +50,12 @@
         width: 100%;
       }
       strong {
-        font-size: 3rem;
+        font-size: calc(#{$font-size}*1.4);
         font-weight: normal;
         line-height: 4.5rem;
         .description__decoration {
-          font-size: 5rem;
-          display: block;
+          font-size: calc(#{$font-size}*2.3);
+          width: 80%;
         }
       }
     }

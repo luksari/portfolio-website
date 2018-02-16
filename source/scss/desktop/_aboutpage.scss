@@ -35,8 +35,9 @@
     }
     .aboutpage-container__description {
       width: 33%;
-      margin-bottom: 0;
+      margin-bottom: 2rem;
       align-self: flex-start;
+      line-height: calc(#{$font-size}*0.5);
       font-size: calc(#{$font-size}*0.3);
       .description__decoration {
         font-size:calc(#{$font-size}*0.4);
@@ -66,12 +67,12 @@
         .employee--bad{
           margin-left: 3rem;
           right: auto;
-          bottom: -20rem;
+          bottom: -12.5rem;
         }
         .employee--good {
           margin-right: 3rem;
           left: auto;
-          bottom: -20rem;
+          bottom: -12.5rem;
         }
 
       }

@@ -4,15 +4,35 @@
 @include for-tablet-portrait-up {
   .page-footer {
     width: 100%;
-    height: auto;
-    background: $dark;
-    padding: 0.5rem;
-    .page-footer__footer-description {
-      color: $white;
-      font-family: 'open-sans', sans-serif;
-      font-size: calc(#{$font-size}*0.4);
+    height: 100%;
+    background: $gray;
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    q {
       text-align: center;
+      font-family: 'open-sans', sans-serif;
+      font-size: calc(#{$font-size}*0.5);
+      font-style: italic;
+      padding: 1.6rem;
+      line-height: 100%;
+      color: $dark;
+      background: $white;
+      quotes: "\201C""\201D""\2018""\2019";
+      border-left: 10px solid $green;
+      box-shadow: 0 0 5px 0px $dark;
+      &::before {
+        color: $green;
+        content: open-quote;
+        font-size: calc(#{$font-size}*1.1);
+        margin-right: 0.25rem;
+        vertical-align: -0.4rem;
+      }
+      &::after {
+        content: '';
+      }
     }
   }
 }
-

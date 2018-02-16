@@ -3,9 +3,12 @@
 @import './variables.scss';
 @include for-tablet-landscape-up {
   .page-footer {
-    .page-footer__footer-description {
-      font-size: calc(#{$font-size}*0.25);
+    q {
+      padding: 2.2rem 1rem;
+      font-size: calc(#{$font-size}*0.35);
+      &::before {
+        font-size: calc(#{$font-size}*0.75);
+      }
     }
   }
 }
-

@@ -9,6 +9,7 @@
     background: $gray;
     padding: 1.5rem;
     .projectspage-container__heading {
+      margin-top: 4rem;
       display: block;
       font-size: calc(#{$font-size}*2);
       width: 100%;
@@ -46,9 +47,12 @@
         width: 100%;
         .projects-list__list-item {
           position: relative;
-          margin-top: 0.8rem;
-          width: 70%;
-          &:hover {
+          cursor: pointer;
+          margin: 0.8rem;
+          width: 75%;
+          overflow: hidden;
+          &:hover,
+          &:focus {
             &>.list-item__overlay {
               position: absolute;
               display: flex;
@@ -61,13 +65,17 @@
               height: 100%;
               background: rgba($color:$white, $alpha: 0.7);
               padding: 0.8rem;
-              border-radius: 10%;
+              border: 1rem solid $dark;
               box-shadow: 0 0 5px 0 $dark;
               opacity: 1;
+            }
+            .list-item__image {
+              transform: scale(1.5);
             }
           }
           .list-item__image {
             max-width: 100%;
+            transition: all 0.3s;
           }
           .list-item__overlay {
             display: none;
@@ -77,7 +85,7 @@
               text-align: center;
               color: $dark;
               font-family: 'open-sans', sans-serif;
-              font-size: calc(#{$font-size}*0.9);
+              font-size: calc(#{$font-size}*0.75);
             }
             .row-wrapper {
               display: flex;
@@ -86,18 +94,63 @@
               margin-bottom: 0.5rem;
               .row-wrapper__code-link,
               .row-wrapper__live-link {
-                font-size: calc(#{$font-size}*1);
-                color: $orange;
+                padding: 0 10px;
+                height: 45px;
+                line-height: 45px;
+                font-size: calc(#{$font-size}*0.9);
+                position: relative;
+                display: inline-block;
+                margin: 15px 25px;
+                outline: none;
+                color: $dark;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 1px;
                 font-weight: bold;
                 text-align: center;
-                font-family: 'open-sans', sans-serif;
-                max-width: 100%;
-                transition: 0.1s ease-in-out all;
                 &:hover,
                 &:focus {
                   color: $blue;
-                  font-family: 'open-sans', sans-serif;
-                  border-bottom: 2px solid $blue;
+                }
+                &::before,
+                &::after {
+                  position: absolute;
+                  width: 45px;
+                  height: 2px;
+                  background: $dark;
+                  content: '';
+                  opacity: 0.5;
+                  transition: all 0.3s;
+                  pointer-events: none;
+                }
+                &::after {
+                  right: 0;
+                  bottom: 0;
+                  transform: rotate(90deg);
+                  transform-origin: 100% 0;
+                }
+                &::before {
+                  top: 0;
+                  left: 0;
+                  transform: rotate(90deg);
+                  transform-origin: 0 0;
+                }
+                &:hover::before,
+                &:hover::after,
+                &:focus::before,
+                &:focus::after {
+                  opacity: 1;
+                  background: $blue
+                }
+                &:focus::before,
+                &:hover::before {
+                  left: 50%;
+                  transform: rotate(0deg) translateX(-50%);
+                }
+                &:focus::after,
+                &:hover::after {
+                  right: 50%;
+                  transform: rotate(0deg) translateX(50%);
                 }
               }
             }

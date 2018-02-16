@@ -27,8 +27,9 @@
       align-items: center;
       li:first-of-type {
         padding: 0;
+        margin-left: 5rem;
         &.logo {
-          margin-right: 10rem;
+          margin-right: 7rem;
           &:hover {
             a {
               background: transparent;
@@ -48,29 +49,14 @@
     .menu-list__item {
       display: flex;
       flex: 1 1 auto;
-      padding: 0.8rem;
+      padding: 2rem;
       align-items: center;
       width: 10%;
       height: 100%;
-      &:hover {
-        a {
-          font-weight: bolder;
-          padding: 0.9rem;
-          background: $white;
-          color: $dark;
-          padding: 0;
-          border-bottom: none;
-          border-radius: 15%;
-        }
-      }
       a {
-        text-decoration: none;
-        padding: 0.8rem;
-        font-size: calc(#{$font-size}*0.2);
-        color: $white;
-        text-transform: uppercase;
-        transition: all 0.3s;
-        border-bottom: 1px solid $white;
+        span {
+          font-size: calc(#{$font-size}*0.35);
+        }
       }
     }
   }

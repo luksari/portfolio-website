@@ -8,6 +8,7 @@
     flex-direction: column;
     background: $gray;
     .aboutpage-container__heading {
+      margin-top: 2rem;
       display: block;
       font-size: calc(#{$font-size}*1.5);
       width: 100%;
@@ -39,20 +40,22 @@
       font-size: calc(#{$font-size}*0.7);
       z-index: 1;
       color: $dark;
+      align-self: center;
       font-family: 'open-sans', sans-serif;
-      margin-bottom: 1rem;
+      margin-top: auto;
+      margin-bottom: 3rem;
       .description__decoration {
-        font-size: calc(#{$font-size}*0.9);
+        font-size: calc(#{$font-size}*0.8);
         color: $dark;
         border-bottom: 3px solid $green;
         width: 100%;
       }
       .description__important {
         color: $dark;
-        font-size: calc(#{$font-size}*0.9);
+        font-size: calc(#{$font-size}*1);
         .description__decoration {
           color: $dark;
-          font-size: calc(#{$font-size}*1.1);
+          font-size: calc(#{$font-size}*1.2);
         }
       }
     }

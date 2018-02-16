@@ -3,7 +3,7 @@
 @import './variables.scss';
 @include for-desktop-up {
   .page-footer {
-    .page-footer__footer-description {
+    q{
       font-size: calc(#{$font-size}*0.25);
     }
   }
