@@ -19,7 +19,7 @@ export function delegateMenu() {
       if (e.target && (e.target.classList.contains("menu__menu-button") || (e.target.parentElement.classList.contains("menu__menu-button")))) {
         toggleMenu();
       }
-      else if (e.target && (e.target.nodeName === "A" || e.target.parentElement.nodeName === "LI" || e.target.nodeName === "IMG")) {
+else if (e.target && (e.target.nodeName === "A" || e.target.parentElement.nodeName === "LI" || e.target.nodeName === "IMG" || e.target.nodeName === "SPAN")) {
         toggleMenu();
       }
     }, false);

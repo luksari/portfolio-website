@@ -11,10 +11,10 @@
     width: 100%;
   }
   .page-header__menu {
-    background: rgba($color: $white, $alpha: 0.2);
     display: flex;
     padding: 0;
     width: 100%;
+    background: none;
     .menu__menu-button {
       display: none;
     }
